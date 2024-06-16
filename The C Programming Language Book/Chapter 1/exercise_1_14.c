@@ -7,14 +7,14 @@
 #define ARRLEN 94
 #define OFFSET 33
 
-main()
+int main()
 {
     int frequencies[ARRLEN];
     int c, i, j;
 
     printf("This program will print a histogram of the frequencies of each character in the input.\n\n");
     printf("When you are done typing in the input, press ENTER and CTRL+D to print the histogram.\n");
-    printf("Each dash represents one occurence of the given character.\n");
+    printf("Each dash represents one occurrence of the given character.\n");
 
     /* Set each index in the array to 0 */
     for (i = 0; i < ARRLEN; ++i)
@@ -35,4 +35,6 @@ main()
 
         printf("\n");
     }
+
+    return 0;
 }
